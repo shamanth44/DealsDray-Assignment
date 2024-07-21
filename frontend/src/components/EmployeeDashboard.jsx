@@ -128,12 +128,6 @@ function EmployeeDashboard() {
                 )}
               </tbody>
             </table>
-            <div
-              className="pagination"
-              style={{ textAlign: "center", height: "50px" }}
-            >
-              Pagination to be implemented
-            </div>
           </>
         )}
       </div>
