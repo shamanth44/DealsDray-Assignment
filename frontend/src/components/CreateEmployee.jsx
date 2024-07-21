@@ -32,7 +32,7 @@ function CreateEmployee() {
     formData.append("image", image);
    try {
      const response = await axios.post(
-       "https://employee-dashboard-backend-iota.vercel.app/api/v1/employee/create-employee",
+       "https://deals-dray-assignment.vercel.app/api/v1/employee/create-employee",
        formData
      );
      navigate("/dashboard");

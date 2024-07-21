@@ -12,7 +12,7 @@ function GetSingleEmployee() {
   const { id } = useParams();
   axios.defaults.withCredentials = true;
   const getEmployee = async () => {
-    const response = await axios.get(`https://employee-dashboard-backend-iota.vercel.app/api/v1/employee/get-employee/${id}`)
+    const response = await axios.get(`https://deals-dray-assignment.vercel.app/api/v1/employee/get-employee/${id}`)
     const employee = await response.data.data;
     console.log(employee)
     setSingleEmployee(employee)

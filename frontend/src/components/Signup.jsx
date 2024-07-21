@@ -27,7 +27,7 @@ function Signup() {
     formData.append("password", data.password);
     try {
       await axios.post(
-        "https://employee-dashboard-backend-iota.vercel.app/api/v1/admin/register",
+        "https://deals-dray-assignment.vercel.app/api/v1/admin/register",
         formData
       );
       navigate("/signin");

@@ -24,7 +24,7 @@ function Signin() {
     setLoading(true);
 
        await axios.post(
-        "https://employee-dashboard-backend-iota.vercel.app/api/v1/admin/login",
+        "https://deals-dray-assignment.vercel.app/api/v1/admin/login",
         {email, password}
       );
       navigate("/dashboard")

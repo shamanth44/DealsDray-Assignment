@@ -8,7 +8,7 @@ function Signout() {
 
     const navigate = useNavigate();
   const signout = async () => {
-    axios.post("https://employee-dashboard-backend-iota.vercel.app/api/v1/admin/logout");
+    axios.post("https://deals-dray-assignment.vercel.app/api/v1/admin/logout");
     navigate("/signin")
   };
   return (

@@ -3,7 +3,7 @@
 
 // function SingleEmployee() {
 //     const getEmployee = async () => {
-//         await axios.get(`https://employee-dashboard-backend-iota.vercel.app/api/v1/employee/get-employee/${id}`)
+//         await axios.get(`https://deals-dray-assignment.vercel.app/app/api/v1/employee/get-employee/${id}`)
 //     }
 //   return (
 //     <>

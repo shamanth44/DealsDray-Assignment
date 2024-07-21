@@ -24,7 +24,7 @@ function EmployeeDashboard() {
   );
   const getEmployees = async () => {
     const response = await axios.get(
-      "https://employee-dashboard-backend-iota.vercel.app/api/v1/employee/get-employees"
+      "https://deals-dray-assignment.vercel.app/api/v1/employee/get-employees"
     );
     const employeeData = await response.data.data;
     setEmployee(employeeData);

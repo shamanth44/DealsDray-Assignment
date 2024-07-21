@@ -44,9 +44,9 @@ app.get("/", (req, res) => {
   res.send("Server")
 })
 
-app.use("/api/v1/admin", adminRouter) // https://employee-dashboard-backend-iota.vercel.app/api/v1/admin/register
+app.use("/api/v1/admin", adminRouter) // https://deals-dray-assignment.vercel.app/api/v1/admin/register
 
-app.use("/api/v1/employee", employeeRouter) // https://employee-dashboard-backend-iota.vercel.app/api/v1/employee/create-employee
+app.use("/api/v1/employee", employeeRouter) // https://deals-dray-assignment.vercel.app/api/v1/employee/create-employee
 
 app.use(errorMiddleware)
 // app.use(  async function (

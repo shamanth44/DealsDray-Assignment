@@ -50,7 +50,7 @@ function EditEmployee({ singleEmployee, id }) {
     formData.append("image", data.image?.[0]);
     try {
       const response = await axios.put(
-        `https://employee-dashboard-backend-iota.vercel.app/api/v1/employee/update-employee/${id}`,
+        `https://deals-dray-assignment.vercel.app/api/v1/employee/update-employee/${id}`,
         formData
       );
       navigate("/dashboard");
@@ -230,7 +230,7 @@ function EditEmployee({ singleEmployee, id }) {
   //     formData.append("image", image);
   //     try {
   //       const response = await axios.put(
-  //         `https://employee-dashboard-backend-iota.vercel.app/api/v1/employee//update-employee/${id}`,
+  //         `https://deals-dray-assignment.vercel.app/api/v1/employee//update-employee/${id}`,
   //         formData
   //       );
   //       navigate("/dashboard");
