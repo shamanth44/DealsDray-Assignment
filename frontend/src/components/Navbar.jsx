@@ -8,7 +8,7 @@ function Navbar() {
   const [ hasData, setHasData ] = useState(false);
   const [admin, setAdmin] = useState({});
   const getAdmin = async () => {
-    const response = await axios.get("/api/v1/admin/get-admin")
+    const response = await axios.get("https://deals-dray-assignment.vercel.app/api/v1/admin/get-admin")
     const adminData = await response.data.data
     setAdmin(adminData)
     setHasData(true)
