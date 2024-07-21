@@ -41,7 +41,7 @@ const updateSchema = zod.object({
     .refine((file) =>  file?.image?.length >= 0 ,"Image is required")
     .refine((file) => {return !file?.image?.[0]  || file?.image?.[0]?.size  <= 4000000, 'File size must be less than 4MB'})
     .refine((file) => {return !file?.image?.[0] || ['image/jpeg', 'image/png'].includes(file?.image?.[0]?.mimetype), ' Image is not found Only JPEG and PNG images allowed'}),
-    designation: zod.string({required_error: "Designation is required"}).trim().min(3, {message: "Designation must be atleast 3 character"}),
+    designation: zod.string({required_error: "Designation is required"}).trim().min(2, {message: "Designation must be atleast 3 character"}),
     gender: zod.string({required_error: "Gender is required"}).trim().min(4, {message: "Gender must be atleast 4 character"}),
     course: zod.string({required_error: "Course is required"}).trim().min(3, {message: "Course must be atlest 3 character"})
 
